@@ -1,0 +1,94 @@
+{
+  "patients": [
+    {
+      "ip": "IP001",
+      "nom": "Amrani",
+      "prenom": "Youssef",
+      "cin": "AB123456",
+      "telephone": "0612345678",
+      "organisme": "CNSS",
+      "active": true
+    },
+    {
+      "ip": "IP002",
+      "nom": "Bennani",
+      "prenom": "Salma",
+      "cin": "CD654321",
+      "telephone": "0676543210",
+      "organisme": "RAMED",
+      "active": true
+    }
+  ],
+  "organismes": [
+    {
+      "id": "ORG001",
+      "nom": "CNSS"
+    },
+    {
+      "id": "ORG002",
+      "nom": "RAMED"
+    },
+    {
+      "id": "ORG003",
+      "nom": "Mutuelle"
+    }
+  ],
+  "services": [
+    {
+      "id": "SRV001",
+      "specialite": "Cardiologie"
+    },
+    {
+      "id": "SRV002",
+      "specialite": "Pediatrie"
+    },
+    {
+      "id": "SRV003",
+      "specialite": "Neurologie"
+    }
+  ],
+  "agendas": [
+    {
+      "code": "AG001",
+      "description": "Consultation cardiologie matin",
+      "specialite": "Cardiologie",
+      "jours": ["monday", "wednesday", "friday"],
+      "nombrePatients": 18
+    },
+    {
+      "code": "AG002",
+      "description": "Consultation pediatrie",
+      "specialite": "Pediatrie",
+      "jours": ["Tuesday", "Thursday"],
+      "nombrePatients": 24
+    }
+  ],
+  "rdvs": [
+    {
+      "idRDV": "RDV001",
+      "ip": "IP001",
+      "specialite": "Cardiologie",
+      "code": "AG001",
+      "ficheref": "fiche-youssef.pdf",
+      "dateRDV": "2026-06-05",
+      "confirmer": true
+    },
+    {
+      "idRDV": "RDV002",
+      "ip": "IP002",
+      "specialite": "Pediatrie",
+      "code": "AG002",
+      "ficheref": "fiche-salma.pdf",
+      "dateRDV": "2026-06-06",
+      "confirmer": false
+    }
+  ],
+  "users": [
+    {
+      "id": "USR001",
+      "nom": "Admin",
+      "email": "admin@gestionrdv.local",
+      "password": "admin123"
+    }
+  ]
+}
